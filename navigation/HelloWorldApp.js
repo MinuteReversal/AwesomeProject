@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text, View, Image, Button, Alert } from "react-native";
+import { Text, View, Image, Button } from "react-native";
 
 export default class HelloWorldApp extends Component {
     constructor(props) {
