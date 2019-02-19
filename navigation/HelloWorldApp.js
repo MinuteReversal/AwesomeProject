@@ -58,7 +58,53 @@ export default class HelloWorldApp extends Component {
                         title="绝对定位"
                         onPress={() => navigate("PositionAbsolute")}
                     />
-                    <Button title="row" onPress={()=>navigate("FlexDirection")}/>
+                    <Button
+                        title="row"
+                        onPress={() => navigate("FlexDirection")}
+                    />
+                    <Button
+                        title="colum"
+                        onPress={() => navigate("JustifyContent")}
+                    />
+                    <Button
+                        title="stretch"
+                        onPress={() => navigate("StretchItems")}
+                    />
+                </View>
+                <View style={{ flexDirection: "row" }}>
+                    <Button
+                        title="绝对居中"
+                        onPress={() => navigate("AbsoluteCenter")}
+                    />
+                    <Button
+                        title="弹性居中"
+                        onPress={() => navigate("FlexCenter")}
+                    />
+                    <Button
+                        title="弹性居中2"
+                        onPress={() => navigate("FlexCenterRow")}
+                    />
+                </View>
+                <View style={{ flexDirection: "row" }}>
+                    <Button
+                        title="左右固定中间拉伸flex"
+                        onPress={() => navigate("StretchHorizontal")}
+                    />
+                    <Button
+                        title="上下固定中间拉伸flex"
+                        onPress={() => navigate("StretchVertical")}
+                    />
+                </View>
+                <View style={{ flexDirection: "row" }}>
+                    <Button
+                        title="圆角"
+                        onPress={() => navigate("BorderRadius")}
+                    />
+                    <Button
+                        title="文本框"
+                        onPress={() => navigate("HandingInput")}
+                    />
+                    <Button title="mp4" onPress={() => navigate("VideoPage")} />
                 </View>
             </View>
         );

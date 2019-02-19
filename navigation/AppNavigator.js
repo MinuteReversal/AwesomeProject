@@ -7,6 +7,16 @@ import PositionRelative from "./PositionRelative";
 import PositionAbsolute from "./PositionAbsolute";
 import PageB from "./PageB";
 import FlexDirection from "./FlexDirection";
+import JustifyContent from "./JustifyContent";
+import AbsoluteCenter from "./AbsoluteCenter";
+import StretchItems from "./StretchItems";
+import FlexCenter from "./FlexCenter";
+import FlexCenterRow from "./FlexCenterRow";
+import StretchHorizontal from "./StretchHorizontal";
+import StretchVertical from "./StretchVertical";
+import BorderRadius from "./BorderRadius";
+import HandingInput from './HandingInput'
+import VideoPage from './VideoPage'
 
 export default createAppContainer(
     createStackNavigator({
@@ -16,6 +26,16 @@ export default createAppContainer(
         PositionRelative,
         PositionAbsolute,
         PageB,
-        FlexDirection
+        FlexDirection,
+        JustifyContent,
+        AbsoluteCenter,
+        StretchItems,
+        FlexCenter,
+        FlexCenterRow,
+        StretchHorizontal,
+        StretchVertical,
+        BorderRadius,
+        HandingInput,
+        VideoPage
     })
 );
