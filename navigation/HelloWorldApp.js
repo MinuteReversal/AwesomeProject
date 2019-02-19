@@ -58,6 +58,7 @@ export default class HelloWorldApp extends Component {
                         title="绝对定位"
                         onPress={() => navigate("PositionAbsolute")}
                     />
+                    <Button title="row" onPress={()=>navigate("FlexDirection")}/>
                 </View>
             </View>
         );

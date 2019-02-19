@@ -6,6 +6,7 @@ import helloapp from "./HelloWorldApp";
 import PositionRelative from "./PositionRelative";
 import PositionAbsolute from "./PositionAbsolute";
 import PageB from "./PageB";
+import FlexDirection from "./FlexDirection";
 
 export default createAppContainer(
     createStackNavigator({
@@ -14,6 +15,7 @@ export default createAppContainer(
         Main: helloapp,
         PositionRelative,
         PositionAbsolute,
-        PageB
+        PageB,
+        FlexDirection
     })
 );
