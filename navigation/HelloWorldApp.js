@@ -126,12 +126,20 @@ export default class HelloWorldApp extends Component {
                         onPress={() => navigate("NetworkingPage")}
                     />
                     <Button
+                        title="WebView"
+                        onPress={() => navigate("WebViewPage")}
+                    />
+                    <Button
                         title="条件渲染"
                         onPress={() => navigate("ConditionPage")}
                     />
                     <Button
                         title="循环渲染"
                         onPress={() => navigate("LoopPage")}
+                    />
+                    <Button
+                        title="渲染html"
+                        onPress={() => navigate("WebViewHtml")}
                     />
                 </View>
             </View>

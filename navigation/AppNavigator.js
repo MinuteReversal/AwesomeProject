@@ -22,7 +22,9 @@ import FlatListPage from "./FlatListPage";
 import SectionListPage from "./SectionListPage";
 import NetworkingPage from "./NetworkingPage";
 import ConditionPage from "./ConditionPage";
-import LoopPage from './LoopPage'
+import LoopPage from "./LoopPage";
+import WebViewPage from "./WebViewPage";
+import WebViewHtml from "./WebViewHtml";
 
 export default createAppContainer(
     createStackNavigator({
@@ -48,6 +50,8 @@ export default createAppContainer(
         SectionListPage,
         NetworkingPage,
         ConditionPage,
-        LoopPage
+        LoopPage,
+        WebViewPage,
+        WebViewHtml
     })
 );
