@@ -106,6 +106,34 @@ export default class HelloWorldApp extends Component {
                     />
                     <Button title="mp4" onPress={() => navigate("VideoPage")} />
                 </View>
+                <View style={{ flexDirection: "row" }}>
+                    <Button
+                        title="滚动视图"
+                        onPress={() => navigate("ScrollViewPage")}
+                    />
+                    <Button
+                        title="FlatList"
+                        onPress={() => navigate("FlatListPage")}
+                    />
+                    <Button
+                        title="SectionList"
+                        onPress={() => navigate("SectionListPage")}
+                    />
+                </View>
+                <View style={{ flexDirection: "row" }}>
+                    <Button
+                        title="网络请求"
+                        onPress={() => navigate("NetworkingPage")}
+                    />
+                    <Button
+                        title="条件渲染"
+                        onPress={() => navigate("ConditionPage")}
+                    />
+                    <Button
+                        title="循环渲染"
+                        onPress={() => navigate("LoopPage")}
+                    />
+                </View>
             </View>
         );
     }
