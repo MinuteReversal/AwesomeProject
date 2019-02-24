@@ -146,6 +146,12 @@ export default class HelloWorldApp extends Component {
                         onPress={() => navigate("PassModel")}
                     />
                 </View>
+                <View style={{ flexDirection: "row" }}>
+                    <Button
+                        title="引用组件"
+                        onPress={() => navigate("RefsScreen")}
+                    />
+                </View>
             </View>
         );
     }

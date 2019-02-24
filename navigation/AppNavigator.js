@@ -26,6 +26,7 @@ import LoopPage from "~/screens/LoopPage";
 import WebViewPage from "~/screens/WebViewPage";
 import WebViewHtml from "~/screens/WebViewHtml";
 import PassModel from "~/screens/PassModel";
+import RefsScreen from "~/screens/RefsScreen";
 
 export default createAppContainer(
     createStackNavigator({
@@ -54,6 +55,7 @@ export default createAppContainer(
         LoopPage,
         WebViewPage,
         WebViewHtml,
-        PassModel
+        PassModel,
+        RefsScreen
     })
 );
