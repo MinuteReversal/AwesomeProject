@@ -25,6 +25,7 @@ import ConditionPage from "~/screens/ConditionPage";
 import LoopPage from "~/screens/LoopPage";
 import WebViewPage from "~/screens/WebViewPage";
 import WebViewHtml from "~/screens/WebViewHtml";
+import PassModel from "~/screens/PassModel";
 
 export default createAppContainer(
     createStackNavigator({
@@ -52,6 +53,7 @@ export default createAppContainer(
         ConditionPage,
         LoopPage,
         WebViewPage,
-        WebViewHtml
+        WebViewHtml,
+        PassModel
     })
 );

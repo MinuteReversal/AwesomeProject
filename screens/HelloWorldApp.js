@@ -141,6 +141,10 @@ export default class HelloWorldApp extends Component {
                         title="渲染html"
                         onPress={() => navigate("WebViewHtml")}
                     />
+                    <Button
+                        title="外部传入对象初始化组件"
+                        onPress={() => navigate("PassModel")}
+                    />
                 </View>
             </View>
         );
