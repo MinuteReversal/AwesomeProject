@@ -25,7 +25,7 @@ export default class HelloWorldApp extends Component {
                 <Text>{this.state.seconds}</Text>
                 <Text>Hello world! &nbsp; &lt; &gt; </Text>
                 <Image
-                    source={require("app/assets/images/robot-dev.png")}
+                    source={require("~/assets/images/robot-dev.png")}
                     style={{ width: 122, height: 114 }}
                 />
                 <Text>

@@ -10,7 +10,7 @@ export default class VideoPage extends React.Component {
         return (
             <View>
                 <Video
-                    source={require("app/assets/mp4/PepaPig.mp4")}
+                    source={require("~/assets/mp4/PepaPig.mp4")}
                     rate={1.0}
                     volume={1.0}
                     resizeMode="cover"
