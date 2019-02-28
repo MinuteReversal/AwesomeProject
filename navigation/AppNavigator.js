@@ -27,6 +27,7 @@ import WebViewPage from "~/screens/WebViewPage";
 import WebViewHtml from "~/screens/WebViewHtml";
 import PassModel from "~/screens/PassModel";
 import RefsScreen from "~/screens/RefsScreen";
+import ReduxScreen from "~/screens/ReduxScreen";
 
 export default createAppContainer(
     createStackNavigator({
@@ -56,6 +57,7 @@ export default createAppContainer(
         WebViewPage,
         WebViewHtml,
         PassModel,
-        RefsScreen
+        RefsScreen,
+        ReduxScreen
     })
 );

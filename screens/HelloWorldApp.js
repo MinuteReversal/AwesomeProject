@@ -151,6 +151,10 @@ export default class HelloWorldApp extends Component {
                         title="引用组件"
                         onPress={() => navigate("RefsScreen")}
                     />
+                    <Button
+                        title="Redux"
+                        onPress={() => navigate("ReduxScreen")}
+                    />
                 </View>
             </View>
         );
