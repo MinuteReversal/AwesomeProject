@@ -28,6 +28,10 @@ import WebViewHtml from "~/screens/WebViewHtml";
 import PassModel from "~/screens/PassModel";
 import RefsScreen from "~/screens/RefsScreen";
 import ReduxScreen from "~/screens/ReduxScreen";
+import ReduxPageA from "~/screens/redux/ReduxPageA";
+import ReduxPageB from "~/screens/redux/ReduxPageB";
+import FlexFall from "../screens/FlexFall";
+
 
 export default createAppContainer(
     createStackNavigator({
@@ -58,6 +62,9 @@ export default createAppContainer(
         WebViewHtml,
         PassModel,
         RefsScreen,
-        ReduxScreen
+        ReduxScreen,
+        ReduxPageA,
+        ReduxPageB,
+        FlexFall
     })
 );

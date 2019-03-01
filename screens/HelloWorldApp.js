@@ -151,9 +151,25 @@ export default class HelloWorldApp extends Component {
                         title="引用组件"
                         onPress={() => navigate("RefsScreen")}
                     />
+                </View>
+                <View style={{ flexDirection: "row" }}>
                     <Button
                         title="Redux"
                         onPress={() => navigate("ReduxScreen")}
+                    />
+                    <Button
+                        title="ReduxPageA"
+                        onPress={() => navigate("ReduxPageA")}
+                    />
+                    <Button
+                        title="ReduxPageB"
+                        onPress={() => navigate("ReduxPageB")}
+                    />
+                </View>
+                <View style={{ flexDirection: "row" }}>
+                    <Button
+                        title="Fall"
+                        onPress={() => navigate("FlexFall")}
                     />
                 </View>
             </View>
