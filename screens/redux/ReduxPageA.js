@@ -1,34 +1,33 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
-import PropTypes from "prop-types";
+import { View, Text, Button } from "react-native";
 import { connect } from "react-redux";
 
 export class ReduxPageA extends Component {
-    static propTypes = {
-        prop: PropTypes
-    };
-
     render() {
+        let { count, add, remove } = this.props;
         return (
             <View>
-                <Text> PageB </Text>
+                <Text> PageA </Text>
                 <Text> {count}</Text>
-                <Button
-                    title="add"
-                    onPress={() => dispatchEvent("increment")}
-                />
-                <Button
-                    title="remove"
-                    onPress={() => dispatchEvent("decrement")}
-                />
+                <Button title="add" onPress={() => add()} />
+                <Button title="remove" onPress={() => remove()} />
             </View>
         );
     }
 }
 
-const mapStateToProps = state => ({});
+const mapStateToProps = state => ({
+    count: state.count
+});
 
-const mapDispatchToProps = {};
+const mapDispatchToProps = dispatch => ({
+    add() {
+        dispatch({type:'increment'});
+    },
+    remove() {
+        dispatch({type:"decrement"});
+    }
+});
 
 export default connect(
     mapStateToProps,

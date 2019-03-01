@@ -3,37 +3,24 @@ import { View, Text, Button } from "react-native";
 import { connect } from "react-redux";
 
 //https://redux.js.org/basics/usage-with-react
-export class ReduxPageB extends Component {
-    render() {
-        let { count, dispatch } = this.props;
-        return (
-            <View>
-                <Text> PageB </Text>
-                <Text> {count}</Text>
-                <Button title="add" onPress={() => dispatch("increment")} />
-                <Button title="remove" onPress={() => remove()} />
-            </View>
-        );
-    }
-}
-
-const mapStateToProps = state => {
-    return {
-        count: state.count
-    };
-};
-
-const mapDispatchToProps = dispatch => {
-    return {
-        add() {
-            dispatch("increment");
-        },
-        remove() {
-            dispatch("decrement");
-        }
-    };
-};
-
-export default connect(
-    mapStateToProps    
-)(ReduxPageB);
+const ReduxPageB = connect(({ count }) => ({ count }))(
+    ({ count, dispatch }) => (
+        <View>
+            <Text> PageB </Text>
+            <Text> {count} </Text>
+            <Button
+                title="增加"
+                onPress={() => {
+                    dispatch({ type: "increment" });
+                }}
+            />
+            <Button
+                title="减少"
+                onPress={() => {
+                    dispatch({ type: "decrement" });
+                }}
+            />
+        </View>
+    )
+);
+export default ReduxPageB;
