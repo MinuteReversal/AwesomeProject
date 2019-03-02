@@ -32,6 +32,7 @@ import ReduxPageA from "~/screens/redux/ReduxPageA";
 import ReduxPageB from "~/screens/redux/ReduxPageB";
 import FlexFall from "../screens/FlexFall";
 import ReduxAsync from "../screens/redux/ReduxAsync";
+import ChangeColumn from '../screens/ChangeColumn'
 
 export default createAppContainer(
     createStackNavigator({
@@ -66,6 +67,7 @@ export default createAppContainer(
         ReduxPageA,
         ReduxPageB,
         FlexFall,
-        ReduxAsync
+        ReduxAsync,
+        ChangeColumn
     })
 );

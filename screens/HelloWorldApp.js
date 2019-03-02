@@ -116,6 +116,10 @@ export default class HelloWorldApp extends Component {
                         onPress={() => navigate("FlatListPage")}
                     />
                     <Button
+                        title="FlatChangeColumn"
+                        onPress={() => navigate("ChangeColumn")}
+                    />
+                    <Button
                         title="SectionList"
                         onPress={() => navigate("SectionListPage")}
                     />
@@ -171,10 +175,7 @@ export default class HelloWorldApp extends Component {
                     />
                 </View>
                 <View style={{ flexDirection: "row" }}>
-                    <Button
-                        title="Fall"
-                        onPress={() => navigate("FlexFall")}
-                    />
+                    <Button title="Fall" onPress={() => navigate("FlexFall")} />
                 </View>
             </View>
         );
