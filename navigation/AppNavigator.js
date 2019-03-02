@@ -31,7 +31,7 @@ import ReduxScreen from "~/screens/ReduxScreen";
 import ReduxPageA from "~/screens/redux/ReduxPageA";
 import ReduxPageB from "~/screens/redux/ReduxPageB";
 import FlexFall from "../screens/FlexFall";
-
+import ReduxAsync from "../screens/redux/ReduxAsync";
 
 export default createAppContainer(
     createStackNavigator({
@@ -65,6 +65,7 @@ export default createAppContainer(
         ReduxScreen,
         ReduxPageA,
         ReduxPageB,
-        FlexFall
+        FlexFall,
+        ReduxAsync
     })
 );

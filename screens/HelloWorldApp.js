@@ -165,6 +165,10 @@ export default class HelloWorldApp extends Component {
                         title="ReduxPageB"
                         onPress={() => navigate("ReduxPageB")}
                     />
+                    <Button
+                        title="ReduxAsync"
+                        onPress={() => navigate("ReduxAsync")}
+                    />
                 </View>
                 <View style={{ flexDirection: "row" }}>
                     <Button

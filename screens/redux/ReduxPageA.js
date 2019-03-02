@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, Button } from "react-native";
 import { connect } from "react-redux";
+import actions from "~/actions";
 
 export class ReduxPageA extends Component {
     render() {
@@ -22,10 +23,10 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     add() {
-        dispatch({type:'increment'});
+        dispatch(actions.add());
     },
     remove() {
-        dispatch({type:"decrement"});
+        dispatch({ type: "decrement" });
     }
 });
 
