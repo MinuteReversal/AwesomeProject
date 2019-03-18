@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, Button } from "react-native";
 import { connect } from "react-redux";
-import actions from "~/actions";
+import { delayMethods } from "~/actions";
 
 export class ReduxAsync extends Component {
     render() {
@@ -20,7 +20,7 @@ const mapStateToProps = state => ({ count: state.count });
 
 const mapDispatchToProps = dispatch => ({
     asyncMethods() {
-        dispatch(actions.delayMethods());
+        dispatch(delayMethods());
     }
 });
 
