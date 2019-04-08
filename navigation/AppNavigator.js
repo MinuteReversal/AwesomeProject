@@ -34,6 +34,10 @@ import FlexFall from "../screens/FlexFall";
 import ReduxAsync from "../screens/redux/ReduxAsync";
 import ChangeColumn from "../screens/ChangeColumn";
 import ModalScreen from "../screens/ModalScreen";
+import AnimationScreen from "../screens/Animation";
+import AnimationMove from "../screens/Animation/move";
+import AnimationRotate from "../screens/Animation/rotate";
+import AnimationScale from "../screens/Animation/scale";
 
 export default createAppContainer(
     createStackNavigator({
@@ -70,6 +74,10 @@ export default createAppContainer(
         FlexFall,
         ReduxAsync,
         ChangeColumn,
-        ModalScreen
+        ModalScreen,
+        AnimationScreen,
+        AnimationMove,
+        AnimationRotate,
+        AnimationScale
     })
 );

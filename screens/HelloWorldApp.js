@@ -176,7 +176,16 @@ export default class HelloWorldApp extends Component {
                 </View>
                 <View style={{ flexDirection: "row" }}>
                     <Button title="Fall" onPress={() => navigate("FlexFall")} />
-                    <Button title="Modal" onPress={() => navigate("ModalScreen")} />
+                    <Button
+                        title="Modal"
+                        onPress={() => navigate("ModalScreen")}
+                    />
+                </View>
+                <View style={{ flexDirection: "row" }}>
+                    <Button
+                        title="Animation"
+                        onPress={() => navigate("AnimationScreen")}
+                    />
                 </View>
             </View>
         );
