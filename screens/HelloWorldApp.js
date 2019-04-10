@@ -186,6 +186,10 @@ export default class HelloWorldApp extends Component {
                         title="Animation"
                         onPress={() => navigate("AnimationScreen")}
                     />
+                    <Button
+                        title="ImagePreviewer"
+                        onPress={() => navigate("ImagePreviewer")}
+                    />
                 </View>
             </View>
         );

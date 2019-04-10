@@ -38,6 +38,7 @@ import AnimationScreen from "../screens/Animation";
 import AnimationMove from "../screens/Animation/move";
 import AnimationRotate from "../screens/Animation/rotate";
 import AnimationScale from "../screens/Animation/scale";
+import ImagePreviewer from '../screens/ImagePreviewer'
 
 export default createAppContainer(
     createStackNavigator({
@@ -78,6 +79,7 @@ export default createAppContainer(
         AnimationScreen,
         AnimationMove,
         AnimationRotate,
-        AnimationScale
+        AnimationScale,
+        ImagePreviewer
     })
 );
