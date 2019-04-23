@@ -190,6 +190,10 @@ export default class HelloWorldApp extends Component {
                         title="ImagePreviewer"
                         onPress={() => navigate("ImagePreviewer")}
                     />
+                    <Button
+                        title="NetestScroll"
+                        onPress={() => navigate("NetestScroll")}
+                    />
                 </View>
             </View>
         );

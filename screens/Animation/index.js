@@ -25,6 +25,12 @@ class index extends Component {
                         navigate("AnimationScale");
                     }}
                 />
+                <Button
+                    title="TransIn"
+                    onPress={() => {
+                        navigate("TransIn");
+                    }}
+                />
             </View>
         );
     }

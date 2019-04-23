@@ -38,7 +38,9 @@ import AnimationScreen from "../screens/Animation";
 import AnimationMove from "../screens/Animation/move";
 import AnimationRotate from "../screens/Animation/rotate";
 import AnimationScale from "../screens/Animation/scale";
-import ImagePreviewer from '../screens/ImagePreviewer'
+import ImagePreviewer from "../screens/ImagePreviewer";
+import TransIn from "../screens/Animation/transIn";
+import NetestScroll from "../screens/NetestScroll"
 
 export default createAppContainer(
     createStackNavigator({
@@ -80,6 +82,8 @@ export default createAppContainer(
         AnimationMove,
         AnimationRotate,
         AnimationScale,
-        ImagePreviewer
+        ImagePreviewer,
+        TransIn,
+        NetestScroll
     })
 );
