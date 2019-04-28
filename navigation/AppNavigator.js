@@ -41,6 +41,7 @@ import AnimationScale from "../screens/Animation/scale";
 import ImagePreviewer from "../screens/ImagePreviewer";
 import TransIn from "../screens/Animation/transIn";
 import NetestScroll from "../screens/NetestScroll"
+import SkeletonScreen from '../screens/SkeletonScreen'
 
 export default createAppContainer(
     createStackNavigator({
@@ -84,6 +85,7 @@ export default createAppContainer(
         AnimationScale,
         ImagePreviewer,
         TransIn,
-        NetestScroll
+        NetestScroll,
+        SkeletonScreen
     })
 );
