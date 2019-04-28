@@ -5,13 +5,17 @@ import Square from "./Square";
 
 export default class Avatar extends PureComponent {
     render() {
-        const { size = 40, shape = "circle" /* circle,square */ } = this.props;
+        const {
+            size = 40,
+            shape = "circle" /* circle,square */,
+            active = false
+        } = this.props;
         return (
             <View style={styles.avatar}>
                 {shape == "circle" ? (
-                    <Circle size={size} />
+                    <Circle active={active} size={size} />
                 ) : (
-                    <Square width={size} height={size} />
+                    <Square active={active} width={size} height={size} />
                 )}
             </View>
         );

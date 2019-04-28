@@ -24,15 +24,15 @@ export default class index extends PureComponent {
                         {avatar && (
                             <View style={styles.avatar}>
                                 {"boolean" == typeof avatar ? (
-                                    <Avatar />
+                                    <Avatar active={active} />
                                 ) : (
-                                    <Avatar {...avatar} />
+                                    <Avatar active={active} {...avatar} />
                                 )}
                             </View>
                         )}
                         <View style={styles.content}>
-                            <Title />
-                            <Paragraph {...paragraph} />
+                            <Title active={active} />
+                            <Paragraph active={active} {...paragraph} />
                         </View>
                     </View>
                 ) : (

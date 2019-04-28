@@ -194,9 +194,15 @@ export default class HelloWorldApp extends Component {
                         title="NetestScroll"
                         onPress={() => navigate("NetestScroll")}
                     />
+                </View>
+                <View style={{ flexDirection: "row" }}>
                     <Button
                         title="Skeleton"
                         onPress={() => navigate("SkeletonScreen")}
+                    />
+                    <Button
+                        title="LinearGradientScreen"
+                        onPress={() => navigate("LinearGradientScreen")}
                     />
                 </View>
             </View>

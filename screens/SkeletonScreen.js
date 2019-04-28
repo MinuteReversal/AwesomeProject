@@ -7,9 +7,9 @@ export default class SkeletonScreen extends Component {
         loading: true
     };
     componentDidMount() {
-        setTimeout(() => {
-            this.setState({ loading: false });
-        }, 3000);
+        // setTimeout(() => {
+        //     this.setState({ loading: false });
+        // }, 3000);
     }
     render() {
         const { loading } = this.state;
@@ -48,6 +48,27 @@ export default class SkeletonScreen extends Component {
                     </View>
                 </Skeleton>
                 <Skeleton avatar loading={loading} paragraph={{ rows: 2 }}>
+                    <View>
+                        <Text>
+                            hello wordhello wordhello wordhello wordhello
+                            wordhello wordhello wordhello wordhello wordhello
+                            wordhello wordhello wordhello wordhello wordhello
+                            wordhello wordhello wordhello wordhello wordhello
+                            wordhello wordhello wordhello wordhello wordhello
+                            wordhello wordhello wordhello wordhello wordhello
+                            wordhello wordhello wordhello wordhello wordhello
+                            wordhello wordhello wordhello wordhello wordhello
+                            wordhello wordhello wordhello wordhello wordhello
+                            wordhello wordhello wordhello word
+                        </Text>
+                    </View>
+                </Skeleton>
+                <Skeleton
+                    avatar
+                    active
+                    loading={loading}
+                    paragraph={{ rows: 5 }}
+                >
                     <View>
                         <Text>
                             hello wordhello wordhello wordhello wordhello

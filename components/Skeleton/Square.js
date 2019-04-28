@@ -1,10 +1,21 @@
 import React, { PureComponent } from "react";
 import { StyleSheet, View } from "react-native";
+import AnimationBlock from "./AnimationBlock";
 
 export default class Square extends PureComponent {
     render() {
-        const { height = 16, width = "100%", style } = this.props;
-        return <View style={[styles.square, style, { height, width }]} />;
+        const {
+            height = 16,
+            width = "100%",
+            active = false,
+            style
+        } = this.props;
+        return (
+            <AnimationBlock
+                active={active}
+                style={[styles.square, style, { height, width }]}
+            />
+        );
     }
 }
 

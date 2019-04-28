@@ -1,11 +1,13 @@
 import React, { PureComponent } from "react";
 import { StyleSheet, View } from "react-native";
+import AnimationBlock from "./AnimationBlock";
 
 export default class Circle extends PureComponent {
     render() {
-        const { style, size = 40 } = this.props;
+        const { style, size = 40, active = false } = this.props;
         return (
-            <View
+            <AnimationBlock
+                active={active}
                 style={[
                     styles.circle,
                     style,

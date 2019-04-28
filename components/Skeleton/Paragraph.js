@@ -4,7 +4,7 @@ import Square from "./Square";
 
 export default class Paragraph extends PureComponent {
     render() {
-        const { rows = 3, width = "61%" } = this.props;
+        const { rows = 3, width = "61%", active = false } = this.props;
         let lines = [];
         for (let i = 0; i < rows; i++) {
             let w = width;
@@ -17,6 +17,7 @@ export default class Paragraph extends PureComponent {
 
             lines.push(
                 <Square
+                    active={active}
                     key={i}
                     width={w}
                     style={{ marginTop: i == 0 ? 0 : 16 }}
